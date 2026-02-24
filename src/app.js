@@ -123,13 +123,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function logout() {
   localStorage.removeItem("rol");
-  window.location.href = "https://emilianomandacen.github.io/TallerDesarrolloSoftHUELLAS.github.io/index.html";
+  window.location.href = "TallerDesarrolloSoftHUELLAS.github.io/index.html";
 }
 
 // Export functions for testing in Node (Jest)
 if (typeof module !== "undefined") {
   module.exports = { login, logout };
 }
+
 
 
 
