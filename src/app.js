@@ -8,7 +8,7 @@ function login() {
 
   if (user === "admin" && pass === "admin123") {
     localStorage.setItem("rol", "admin");
-    window.location.href = "/admin.html";
+    window.location.href = "admin.html";
   } else {
     error.textContent = "Usuario o contraseña incorrectos";
   }
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!window.location.pathname.includes("admin.html")) return;
 
   if (localStorage.getItem("rol") !== "admin") {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
     return;
   }
   // ===============================
@@ -130,3 +130,4 @@ function logout() {
 if (typeof module !== "undefined") {
   module.exports = { login, logout };
 }
+
